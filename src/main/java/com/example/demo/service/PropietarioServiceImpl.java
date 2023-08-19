@@ -15,7 +15,8 @@ public class PropietarioServiceImpl implements PropietarioService{
 	@Autowired
 	PropietarioRepository propietarioRepository;
 	@Override
-	@Transactional(value = TxType.NOT_SUPPORTED)
+	
+	@Transactional(value = TxType.REQUIRES_NEW)
 	public Propietario buscarPorId(Integer id) {
 		// TODO Auto-generated method stub
 		return this.propietarioRepository.buscarPorId(id);
@@ -29,7 +30,7 @@ public class PropietarioServiceImpl implements PropietarioService{
 	}
 
 	@Override
-	@Transactional(value = TxType.MANDATORY)
+	@Transactional(value = TxType.REQUIRES_NEW)
 	public void actualizar(Propietario propietario) {
 		// TODO Auto-generated method stub
 		this.propietarioRepository.actualizar(propietario);

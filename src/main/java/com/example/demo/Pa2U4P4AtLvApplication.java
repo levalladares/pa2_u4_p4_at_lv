@@ -20,12 +20,12 @@ public class Pa2U4P4AtLvApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-//		Propietario prop=new Propietario();
-//		prop.setNombre("luis");
-//		prop.setCedula("1235465");
-//		prop.setApellido("aaaaaaa");
-//		propietarioService.insertar(prop);
-		
+////		Propietario prop=new Propietario();
+////		prop.setNombre("luis");
+////		prop.setCedula("1235465");
+////		prop.setApellido("aaaaaaa");
+////		propietarioService.insertar(prop);
+//		
 	}
 
 }
